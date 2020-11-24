@@ -11,39 +11,49 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <form method="POST" th:object = "${customerForm}" th:action="@{/shoppingCartCustomer}">
+        <form method="POST" th:object = "${usr}" th:action="@{/register_exe}">
           
          <table>
+            <tr>
+               <td>Username *</td>
+               <td><input th:field="*{username}" /></td>
+               <td>
+       
+               </td>
+            </tr>
+            <tr>
+               <td>Password *</td>
+               <td><input th:field="*{password}" /></td>
+               <td>
+        
+               </td>
+            </tr>
             <tr>
                <td>Name *</td>
                <td><input th:field="*{name}" /></td>
                <td>
-                  <span class="error-message"
-                     th:if="${#fields.hasErrors('name')}" th:errors="*{name}">..</span>
+       
                </td>
             </tr>
             <tr>
                <td>Email *</td>
                <td><input th:field="*{email}" /></td>
                <td>
-                  <span class="error-message"
-                     th:if="${#fields.hasErrors('email')}" th:errors="*{email}">..</span>
+                 
                </td>
             </tr>
             <tr>
                <td>Phone *</td>
                <td><input th:field="*{phone}" /></td>
                <td>
-                  <span class="error-message"
-                     th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}">..</span>
+                 
                </td>
             </tr>
             <tr>
                <td>Address *</td>
                <td><input th:field="*{address}" /></td>
                <td>
-                  <span class="error-message"
-                     th:if="${#fields.hasErrors('address')}" th:errors="*{address}">..</span>
+               
                </td>
             </tr>
             <tr>

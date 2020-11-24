@@ -6,6 +6,8 @@
     <class>com.example.tas.entity.Account</class>
     <class>com.example.tas.entity.Order</class>
     <class>com.example.tas.entity.OrderDetail</class>
+    <class>com.example.tas.entity.Orders</class>
+    <class>com.example.tas.entity.User</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/pl_tas?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
